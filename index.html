@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meeting Notes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <hr>
+        <div>
+            <details>
+                <summary>Section Links</summary>
+                <nav>
+                    <ul>
+                        <li><a href="#open">Opening Remarks</a></li>
+                        <li><a href="#recap">Recap</a></li>
+                        <li><a href="#new">New Issues</a></li>
+                        <li><a href="#floor">Open Floor</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="stuff">Team Meeting: April 17, the year 2023.</h1>
+        <section>
+            <h2 id="open">Opening Remarks</h2>
+            <details>
+                <summary>Items Covered</summary>
+                <ol>
+                    <li>Crucio is a spell in Hogwarts Legacy.</li>
+                    <li>What does that imply?</li>
+                    <li>A lot, really. Too much.</li>
+                </ol>
+            </details>
+            <p><span><strong>Actual footage.</strong></span></p>
+            <video controls width="512">
+                <source src="media/meeting_video_downscaled.mp4">
+            </video>
+        </section>
+
+        <br>
+        <section>
+            <h2 id="recap">Recap</h2>
+            <ul>
+                <li>45 was going to be indicted.</li>
+            </ul>
+        </section>
+
+        <br>
+        <section>
+            <h2 id="new">New Issues</h2>
+            <ul>
+                <li>45 was indicted.</li>
+            </ul>
+        </section>
+
+        <br>
+        <section>
+            <h2 id="floor">Open Floor</h2>
+            <ol>
+                <li>Ken <i>really</i> doesn't like meetings.</li>
+                <li><em>He was told he was wrong.</em></li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <br><br>
+        <hr>
+        <form>
+            <fieldset>
+                <input type="radio" id="Good" name="review">
+                <label for="Good">Good</label><br><br>
+
+                <input type="checkbox" id="Fun" name="review">
+                <label for="Fun">Fun</label><br><br>
+
+                <label for="Name">Your name</label>
+                <input type="text" id="Name" name="review"><br><br>
+
+                <label for="Date">Date</label>
+                <input type="date" id="Date" name="date"><br><br>
+
+                <label for="fav-person">Favorite team member:</label>
+                <input list="members" id="fav-person" name="fav-person">
+                <datalist id="members">
+                    <option value="Ken">
+                </datalist><br><br>
+
+                <label for="next-meeting">Next meeting:</label>
+                <select name="days" id="next-meeting">
+                    <option value="tues">Tuesday</option>
+                </select><br><br>
+
+                Any last thoughts?<br>
+                <textarea>(not optional, come up with something)</textarea>
+
+                <br><br>
+                <button class="favorite styled" type="button">Submit</button>
+            </fieldset>
+        </form>
+
+        <br><br>
+        <h3>Author's Notes</h3>
+        <p>
+            I reused most of what I made in FA22.<br>
+            Interesting to see that the lab did too :]
+        </p>
+
+        <audio controls src="media/rod_sterling_speaking_on_the_quality_of_TV_shows_in_1968.mp3">
+            <a href="media/rod_sterling_speaking_on_the_quality_of_TV_shows_in_1968.mp3"></a>
+        </audio>
+        
+        <br>
+        <img width="512" src="media/johnny_5.png" alt="Johnny 5 by Stable Diffusion.">
+    </footer>
+</body>
+</html>
