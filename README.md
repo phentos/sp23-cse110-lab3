@@ -1,2 +1,2 @@
-# Lab 2
-Meeting Notes @ [phentos.github.io/cse110-fa23-lab2](https://phentos.github.io/cse110-fa23-lab2/index.html)
+# Lab 3
+[phentos.github.io/sp3-cse110-lab3](phentos.github.io/sp3-cse110-lab3)
