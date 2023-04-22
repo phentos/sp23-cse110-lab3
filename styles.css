@@ -1,0 +1,55 @@
+/* lab 3 style requirements */
+
+section {
+    display: block;
+    padding: 1cm 1ex 1ch 10mm;
+    border-style:ridge;
+    border-color:rgb(0,0,0);
+    border-width: thin;
+    border-radius: 10%;
+    max-width: fit-content;
+    min-width: min-content;
+    margin: 15%,15%,15%,15%;
+}
+
+section:hover {
+    background-color: hsla(20, 37%, 22%, 0.315);
+}
+
+form:active {
+    color:red;
+}
+
+video,
+img {
+    display:inline;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 0px;
+    margin-bottom: 1vw;
+}
+
+details {
+    color: #121;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-align: center;
+    margin:auto;
+}
+
+h2 {
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+}
+
+@font-face {
+    font-family: 'ApocalypseGrunge';
+    src: url('assets/fonts/ApocalypseGrunge.ttf') format('truetype');
+}
+
+body {
+    font-family: 'ApocalypseGrunge', Arial, Helvetica, sans-serif;
+}
