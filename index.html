@@ -33,7 +33,7 @@
 
     <main>
         <h1 id="stuff">Team Meeting: April 17, the year 2023.</h1>
-        <section>
+        <section class="gridbox">
             <h2 id="open">Opening Remarks</h2>
             <details>
                 <summary>Items Covered</summary>
@@ -43,6 +43,7 @@
                     <li>A lot, really. Too much.</li>
                 </ol>
             </details>
+            <h2>No Really, That Was All</h2>
         </section>
 
         <video controls width="512">
@@ -50,28 +51,28 @@
         </video>
 
         <br>
-        <section>
-            <h2 id="recap">Recap</h2>
-            <ul>
-                <li>45 was going to be indicted.</li>
-            </ul>
-        </section>
+        <section class="flexbox">
+            <div>
+                <h2 id="recap">Recap</h2>
+                <ul>
+                    <li>45 was going to be indicted.</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h2 id="new">New Issues</h2>
+                <ul>
+                    <li>45 was indicted.</li>
+                </ul>
+            </div>
 
-        <br>
-        <section>
-            <h2 id="new">New Issues</h2>
-            <ul>
-                <li>45 was indicted.</li>
-            </ul>
-        </section>
-
-        <br>
-        <section>
-            <h2 id="floor">Open Floor</h2>
-            <ol>
-                <li>Ken <i>really</i> doesn't like meetings.</li>
-                <li><em>He was told he was wrong.</em></li>
-            </ol>
+            <div>
+                <h2 id="floor">Open Floor</h2>
+                <ol>
+                    <li>Ken <i>really</i> doesn't like meetings.</li>
+                    <li><em>He was told he was wrong.</em></li>
+                </ol>
+            </div>
         </section>
     </main>
 
@@ -127,6 +128,10 @@
     </footer>
 
     <style>
+        #portrait-detected {
+            display: none;
+        }
+        
         @media (orientation: portrait) {
             * {
                 display: none;
@@ -138,15 +143,16 @@
             }
             
             #portrait-detected {
-                position: static;
+                position: sticky;
+                top: 20px;
                 visibility: visible;
+                float: left;
                 display: block;
-                text-align: center;
+                text-align: left;
                 font-size: 24px;
-                padding: 50px;
+                padding: 5px;
                 width: auto;
                 height: auto;
-                white-space: nowrap;
             }
 
             #portrait-detected > p {

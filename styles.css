@@ -43,6 +43,9 @@ h2 {
     display: inline-block;
     height: fit-content;
     width: fit-content;
+    position: relative;
+    top: auto;
+    left: auto;
 }
 
 @font-face {
@@ -52,4 +55,16 @@ h2 {
 
 body {
     font-family: 'ApocalypseGrunge', Arial, Helvetica, sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 200px;
+}
+
+section[class=gridbox] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
