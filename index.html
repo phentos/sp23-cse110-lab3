@@ -12,7 +12,10 @@
 </head>
 
 <body>
-    <p id="portrait-detected">Portrait mode is not supported.</p>
+    <div id="portrait-detected">
+        <h1>Alert</h1>
+        <p class="portrait-detected">Portrait mode is not supported.</p>
+    </div>
 
     <header>
         <hr>
@@ -70,7 +73,7 @@
                 <h2 id="floor">Open Floor</h2>
                 <ol>
                     <li>Ken <i>really</i> doesn't like meetings.</li>
-                    <li><em>He was told he was wrong.</em></li>
+                    <li>He was told he was wrong.</li>
                 </ol>
             </div>
         </section>
@@ -142,7 +145,7 @@
                 background-color: black;
             }
             
-            #portrait-detected {
+            p.portrait-detected {
                 position: sticky;
                 top: 20px;
                 visibility: visible;
