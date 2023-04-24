@@ -68,3 +68,11 @@ section[class=gridbox] {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+
+li + li {
+    font-weight: lighter;
+}
+
+input ~ label {
+    background-color: aliceblue;
+}
