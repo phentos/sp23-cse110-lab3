@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html lang="en" style="background-color: bisque;">    
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +12,8 @@
 </head>
 
 <body>
+    <p id="portrait-detected">Portrait mode is not supported.</p>
+
     <header>
         <hr>
         <div>
@@ -124,5 +125,39 @@
         <br>
         <img width="512" src="media/johnny_5.png" alt="Johnny 5 by Stable Diffusion.">
     </footer>
+
+    <style>
+        @media (orientation: portrait) {
+            * {
+                display: none;
+            }
+
+            body {
+                display: block;
+                background-color: black;
+            }
+            
+            #portrait-detected {
+                position: static;
+                visibility: visible;
+                display: block;
+                text-align: center;
+                font-size: 24px;
+                padding: 50px;
+                width: auto;
+                height: auto;
+                white-space: nowrap;
+            }
+
+            #portrait-detected > p {
+                color: red;
+                font-weight: bold;
+            }
+
+            #portrait-detected p {
+                color: red;
+            }
+        }
+    </style>
 </body>
 </html>
